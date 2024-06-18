@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rifah-Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- external cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- for footer -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- scroll animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Add Font Awesome for social media icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Add Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- show cards -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .perspective {
+        perspective: 1000px;
+      }
+      .transform-style-preserve-3d {
+        transform-style: preserve-3d;
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+      .rotate-y-180 {
+        transform: rotateY(180deg);
+      }
+      .card {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        transition: transform 0.7s;
+        transform-style: preserve-3d;
+      }
+      .card:hover {
+        transform: rotateY(180deg);
+      }
+      .card-front,
+      .card-back {
+        position: absolute;
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+        height: 15rem;
+        backface-visibility: hidden;
+        object-fit: cover;
+        overflow: hidden;
+        --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+          0 1px 2px -1px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+          0 1px 2px -1px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .card-back {
+        transform: rotateY(180deg);
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/011/412/771/small_2x/abstract-vector-background-bg-purple-blue-pink-gradient-dots-pattern-curve-lines-photo.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-gray-900 text-white" data-aos="fade-down">
+      <div class="navbar-container">
+        <div class="logo">
+          <img
+            class="rounded-lg"
+            src="https://rifah.org/wp-content/uploads/2023/11/rifah-logo.jpg"
+            alt="Logo"
+          />
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <svg
+            class=""
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="white"
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link rounded-lg">Home</a></li>
+          <li><a href="#" class="nav-link rounded-lg">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link rounded-lg">Membership</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Option 1</a></li>
+              <li><a href="#" class="dropdown-item">Option 2</a></li>
+              <li><a href="#" class="dropdown-item">Option 3</a></li>
+              <li><a href="#" class="dropdown-item">Option 4</a></li>
+              <li><a href="#" class="dropdown-item">Option 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link rounded-lg">Events</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Current Events</a></li>
+              <li><a href="#" class="dropdown-item">Upcoming Events</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="nav-link rounded-lg">News</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"
+            ><img
+              src="https://image.flaticon.com/icons/svg/733/733547.svg"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://image.flaticon.com/icons/svg/733/733558.svg"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://image.flaticon.com/icons/svg/733/733553.svg"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile video -->
+    <video
+      id="headerVideo"
+      tabindex="-1"
+      role="application"
+      class="vjs-tech flex md:hidden"
+      preload="none"
+      autoplay=""
+      poster="https://d150hyw1dtprld.cloudfront.net/Image/agHKKsQ4s3BGlx31yr0q0A  /cover-b653cbc47c.jpg"
+      src="https://d150hyw1dtprld.cloudfront.net/Footage/agHKKsQ4s3BGlx31yr0q0A  /full-preview-837ee97beb.mp4"
+      muted="muted"
+    >
+      <div class="TemplateDetails-module_placeholder__Q5L45"></div>
+    </video>
+    <header class="header hidden md:flex" data-aos="fade-up">
+      <div class="video-container">
+        <iframe
+          id="headerVideo"
+          title="Video Player"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1718186695&f=HRVWnuzxcJYs8f4vYjI0mQ&d=0&m=p&r=360p+720p&volume=100&start_res=720p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=autostart/loop&mute=1"
+          allowfullscreen
+        ></iframe>
+        <a href="#" class="join-now-button">Join Now</a>
+      </div>
+    </header>
+    <!-- testimonials started -->
+    <!-- <section class="testimonials">
+      <div class="testimonial-container">
+        <div class="testimonial animate__animated">
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            accumsan libero ut orci pharetra, et eleifend nulla convallis. Nulla
+            facilisi. Curabitur tincidunt arcu id luctus tempor."
+          </p>
+          <p class="testimonial-author">John Doe</p>
+        </div>
+        <div class="testimonial animate__animated">
+          <p class="testimonial-text">
+            "Sed at nulla egestas, scelerisque lorem quis, vulputate nisi. Duis
+            quis purus quis mauris scelerisque tempus. Morbi volutpat magna in
+            nisi."
+          </p>
+          <p class="testimonial-author">Jane Smith</p>
+        </div>
+      </div>
+      <div class="testimonial-navigation">
+        <button id="prevTestimonial">&lt;</button>
+        <button id="nextTestimonial">&gt;</button>
+      </div>
+    </section> -->
+
+    <script type="module">
+      import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+
+      const keenSlider = new KeenSlider(
+        "#keen-slider",
+        {
+          loop: true,
+          slides: {
+            origin: "center",
+            perView: 1.25,
+            spacing: 16,
+          },
+          breakpoints: {
+            "(min-width: 1024px)": {
+              slides: {
+                origin: "auto",
+                perView: 2.5,
+                spacing: 32,
+              },
+            },
+          },
+        },
+        []
+      );
+
+      const keenSliderPrevious = document.getElementById(
+        "keen-slider-previous"
+      );
+      const keenSliderNext = document.getElementById("keen-slider-next");
+
+      keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+      keenSliderNext.addEventListener("click", () => keenSlider.next());
+    </script>
+
+    <section data-aos="flip-up"
+    data-aos-offset="50"
+    data-aos-anchor-placement="top-center" class="" style="overflow-x: hidden;">
+      <div
+        class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+      >
+        <div
+          class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
+        >
+          <h2
+            style="border-bottom: 2px dashed white; padding-bottom: 1rem;"
+            class="max-w-xl text-4xl text-center font-bold tracking-tight text-white sm:text-5xl"
+          >
+            Testimonials
+          </h2>
+
+          <div class="mt-8 flex gap-4 lg:mt-0">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="rounded-full border border-white p-3 text-white transition hover:bg-white hover:text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-5 w-5 rtl:rotate-180"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="rounded-full border border-white p-3 text-white transition hover:bg-white hover:text-black"
+            >
+              <svg
+                class="h-5 w-5 rtl:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+          <div id="keen-slider" class="keen-slider">
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white px-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                      Mr.Shariff
+                    </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      "Ham Rifah Chamber of Commerce and Industry Ke Shukrguzar
+                      Hein. Rifah Ne Hamein Hamari Organisation Register Karne
+                      aur Run Karne Ke Silsile Me Alag Alag Experts Se Connect
+                      Kiya. Experts Ke&nbsp;Sahi Mashware Ke Base Par Hamne
+                      Right Direction Me Kaam Kiya. Ab Ham Apni Organisation Ki
+                      Activities Behtarin Tariqe Se Anjaam De Rahe Hein.
+                      Jazakallahu Khaira"
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+                  &mdash; Michael Scott
+                </footer> -->
+              </blockquote>
+            </div>
+
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                      Mrs. Zoya Habeeb
+                    </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      I always contacted Rifah Chamber of Commerce and Industry
+                      for all my business related issues which I came across. I
+                      got two contacts of businessmen who are interested in my
+                      new startup. Last but not the least, I got an amazing
+                      experience of visiting the world 3rd largest exhibition
+                      called Canton Fair in Ganzhou China through a business
+                      delegation tour organised by Rifah.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+                  &mdash; Michael Scott
+                </footer> -->
+              </blockquote>
+            </div>
+
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                      Mrs & Mr.Rohan Kapoor
+                    </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      It was unexpected, my meeting with Rifah team. Very
+                      Impressive introductory speech made me realized their
+                      dedication to community. Rifah team was a friendly, which
+                      made me to ignite and clear doubts in mind about an
+                      entrepreneurship thought which I had in mind. Immediately
+                      after registering ,I got resources a well experienced
+                      entrepreneur to guide and motivate. May Allah bless and
+                      accept Rifah efforts.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+                  &mdash; Michael Scott
+                </footer> -->
+              </blockquote>
+            </div>
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                      Mr. Muhammed Umar
+                    </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      I contacted Rifah Chamber of Commerce and Industry
+                      regarding my startup in honey business. I got tremendous
+                      guidance about this product. I came to the different types
+                      of honey available in the market, its use and demand. Got
+                      list of government approved labs by Rifah which are into
+                      testing quality and ingredients. Whether we should make
+                      our brand or not and how to promote our brand too.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+                  &mdash; Michael Scott
+                </footer> -->
+              </blockquote>
+            </div>
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                      Ms. Zeba Hashim
+                    </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      On behalf of “Britona Foods Pvt Ltd”, I would like to
+                      thanks Rifah Chamber of Commerce and Industry for their
+                      continuous support and contribution in resolving our
+                      issues. In our manufacturing process we encountered some
+                      issues which results in lowering our efficiency and we
+                      were struggling to sort it out. RCCI and especially Mirza
+                      Afzal Sahab played major role in not only identifying the
+                      core issue but also in providing solutions.We sincerely
+                      thank and acknowledge the services and support of RCCI.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+                  &mdash; Michael Scott
+                </footer> -->
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- show cards start -->
+    <section class="my-16 flex justify-center items-center md:mt-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="card-container group w-80 h-[15rem] perspective mx-auto">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://t4.ftcdn.net/jpg/06/88/04/19/360_F_688041900_oO7crVOes1smYl0vJO6i2ahQSYcBJOZo.jpg"
+                alt="Card Image"
+                class="w-full object-cover h-full"
+              />
+              <div
+                class="text-overlay absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
+              >
+                <div class="flex w-full items-center justify-center">
+                  <a
+                    href="##"
+                    class="border text-white border-2 w-[95%] text-center py-2"
+                    >contents</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-back bg-blue-500 text-white flex justify-center items-center"
+            >
+              <a
+                href="##"
+                class="border bg-gray-[#00000087] hover:bg-[#000222] text-white border-2 w-[95%] text-center py-2"
+                >Events</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-container group w-80 h-[15rem] perspective mx-auto">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://t4.ftcdn.net/jpg/06/88/04/19/360_F_688041900_oO7crVOes1smYl0vJO6i2ahQSYcBJOZo.jpg"
+                alt="Card Image"
+                class="w-full object-cover h-full"
+              />
+              <div
+                class="text-overlay absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
+              >
+                <div class="flex w-full items-center justify-center">
+                  <a
+                    href="##"
+                    class="border text-white border-2 w-[95%] text-center py-2"
+                    >contents</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-back bg-blue-500 text-white flex justify-center items-center"
+            >
+              <a
+                href="##"
+                class="border bg-gray-[#00000087] hover:bg-[#000222] text-white border-2 w-[95%] text-center py-2"
+                >Events</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card-container group w-80 h-[15rem] perspective mx-auto">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://t4.ftcdn.net/jpg/06/88/04/19/360_F_688041900_oO7crVOes1smYl0vJO6i2ahQSYcBJOZo.jpg"
+                alt="Card Image"
+                class="w-full object-cover h-full"
+              />
+              <div
+                class="text-overlay absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
+              >
+                <div class="flex w-full items-center justify-center">
+                  <a
+                    href="##"
+                    class="border text-white border-2 w-[95%] text-center py-2"
+                    >contents</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-back bg-blue-500 text-white flex justify-center items-center"
+            >
+              <a
+                href="##"
+                class="border bg-gray-[#00000087] hover:bg-[#000222] text-white border-2 w-[95%] text-center py-2"
+                >Events</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card-container group w-80 h-[15rem] perspective mx-auto">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://t4.ftcdn.net/jpg/06/88/04/19/360_F_688041900_oO7crVOes1smYl0vJO6i2ahQSYcBJOZo.jpg"
+                alt="Card Image"
+                class="w-full object-cover h-full"
+              />
+              <div
+                class="text-overlay absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
+              >
+                <div class="flex w-full items-center justify-center">
+                  <a
+                    href="##"
+                    class="border text-white border-2 w-[95%] text-center py-2"
+                    >contents</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-back bg-blue-500 text-white flex justify-center items-center"
+            >
+              <a
+                href="##"
+                class="border bg-gray-[#00000087] hover:bg-[#000222] text-white border-2 w-[95%] text-center py-2"
+                >Events</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card-container group w-80 h-[15rem] perspective mx-auto">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://t4.ftcdn.net/jpg/06/88/04/19/360_F_688041900_oO7crVOes1smYl0vJO6i2ahQSYcBJOZo.jpg"
+                alt="Card Image"
+                class="w-full object-cover h-full"
+              />
+              <div
+                class="text-overlay absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
+              >
+                <div class="flex w-full items-center justify-center">
+                  <a
+                    href="##"
+                    class="border text-white border-2 w-[95%] text-center py-2"
+                    >contents</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-back bg-blue-500 text-white flex justify-center items-center"
+            >
+              <a
+                href="##"
+                class="border bg-gray-[#00000087] hover:bg-[#000222] text-white border-2 w-[95%] text-center py-2"
+                >Events</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card-container group w-80 h-[15rem] perspective mx-auto">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="https://t4.ftcdn.net/jpg/06/88/04/19/360_F_688041900_oO7crVOes1smYl0vJO6i2ahQSYcBJOZo.jpg"
+                alt="Card Image"
+                class="w-full object-cover h-full"
+              />
+              <div
+                class="text-overlay absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
+              >
+                <div class="flex w-full items-center justify-center">
+                  <a
+                    href="##"
+                    class="border text-white border-2 w-[95%] text-center py-2"
+                    >contents</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-back bg-blue-500 text-white flex justify-center items-center"
+            >
+              <a
+                href="##"
+                class="border bg-gray-[#00000087] hover:bg-[#000222] text-white border-2 w-[95%] text-center py-2"
+                >Events</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- show cards end -->
+
+    <!-- CHAMBER NEWS start -->
+    <section class="my-16 flex flex-col justify-center items-center">
+      <h2
+        style="border-bottom: 2px dashed white; padding-bottom: 1rem;"
+        class="max-w-xl text-4xl text-center font-bold tracking-tight text-white sm:text-5xl"
+      >
+        CHAMBER NEWS
+      </h2>
+      <div
+        class="grid container grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8"
+      >
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/412/771/small_2x/abstract-vector-background-bg-purple-blue-pink-gradient-dots-pattern-curve-lines-photo.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/412/771/small_2x/abstract-vector-background-bg-purple-blue-pink-gradient-dots-pattern-curve-lines-photo.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/412/771/small_2x/abstract-vector-background-bg-purple-blue-pink-gradient-dots-pattern-curve-lines-photo.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/412/771/small_2x/abstract-vector-background-bg-purple-blue-pink-gradient-dots-pattern-curve-lines-photo.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/412/771/small_2x/abstract-vector-background-bg-purple-blue-pink-gradient-dots-pattern-curve-lines-photo.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/412/771/small_2x/abstract-vector-background-bg-purple-blue-pink-gradient-dots-pattern-curve-lines-photo.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CHAMBER NEWS end -->
+    <!-- MEMBER OFFERS start -->
+    <section class="my-16 flex flex-col justify-center items-center">
+      <h2
+        style="border-bottom: 2px dashed white; padding-bottom: 1rem;"
+        class="max-w-xl text-4xl text-center font-bold tracking-tight text-white sm:text-5xl"
+      >
+        MEMBER OFFERS
+      </h2>
+      <div
+        class="grid container grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8"
+      >
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://t4.ftcdn.net/jpg/04/88/27/17/360_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://t4.ftcdn.net/jpg/04/88/27/17/360_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://t4.ftcdn.net/jpg/04/88/27/17/360_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://t4.ftcdn.net/jpg/04/88/27/17/360_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://t4.ftcdn.net/jpg/04/88/27/17/360_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--news card -->
+        <div class="newsCard max-w-sm bg-white rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <img
+                class="w-full mb-2"
+                src="https://t4.ftcdn.net/jpg/04/88/27/17/360_F_488271787_t9NrmA00kJEtvRzF81PXKHmOzdWR2tdI.jpg"
+                alt=""
+              />
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MEMBER OFFERS end -->
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white pt-3">
+      <div
+        class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 p-5"
+      >
+        <div>
+          <img
+            class="w-36 mb-3 rounded-lg"
+            src="https://rifah.org/wp-content/uploads/2023/11/rifah-logo.jpg"
+            alt=""
+          />
+          <p>
+            We at the Manly Business Chamber recognise the traditional owners of
+            the country where we live and work. We recognise and celebrate the
+            diversity of Indigenous people and their enduring cultures and
+            connections to the land and waters of New South Wales.
+          </p>
+        </div>
+        <div>
+          <h2 class="mb-4 text-lg font-semibold">QUICK LINKS</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Member Benefits</a></li>
+            <li><a href="#" class="hover:underline">Member Offers</a></li>
+            <li><a href="#" class="hover:underline">Join Now</a></li>
+            <li><a href="#" class="hover:underline">Manage Account</a></li>
+            <li><a href="#" class="hover:underline">Renew Membership</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-4 text-lg font-semibold">SUBSCRIBE TO NEWS</h2>
+          <form class="space-y-4">
+            <div>
+              <label for="first-name" class="block text-sm">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                class="w-full p-2 rounded bg-gray-800 border border-gray-700"
+              />
+            </div>
+            <div>
+              <label for="last-name" class="block text-sm">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                class="w-full p-2 rounded bg-gray-800 border border-gray-700"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm">Email address:</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full p-2 rounded bg-gray-800 border border-gray-700"
+                placeholder="Your email address"
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full py-2 rounded bg-teal-600 hover:bg-teal-700"
+            >
+              Sign up
+            </button>
+          </form>
+        </div>
+        <div>
+          <h2 class="mb-4 text-lg font-semibold">CONTACT US</h2>
+          <p class="mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i> address text here
+          </p>
+          <p class="mb-4"><i class="fas fa-phone-alt mr-2"></i> 0403 997 754</p>
+          <p class="mb-4">
+            <i class="fas fa-envelope mr-2"></i> rifah@gmail.com
+          </p>
+          <p><i class="fas fa-id-badge mr-2"></i> locate us</p>
+        </div>
+      </div>
+
+      <div
+        class="sm:flex p-3 sm:items-center sm:justify-between"
+        style="border-top: 2px dashed white;"
+      >
+        <span class="text-sm text-gray-500 sm:text-center">
+          © 2024
+          <a href="https://rifah.org" class="hover:underline">Rifah™</a>. All
+          Rights Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0 space-x-5">
+          <a
+            href="https://facebook.com/rifah"
+            class="text-gray-500 hover:text-gray-900"
+          >
+            <img class="w-10" src="./assets/icons/WhatsApp_icon.png" alt="">
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <!-- <a
+            href="https://twitter.com/rifah"
+            class="text-gray-500 hover:text-gray-900"
+          >
+           <img class="w-10" src="./assets/icons/twitter-icon.png" alt="">
+            <span class="sr-only">Twitter page</span>
+          </a> -->
+          <a
+            href="https://linkedin.com/company/rifah"
+            class="text-gray-500 hover:text-gray-900"
+          >
+           <img class="w-10" src="./assets/icons/linkedin-icon.png" alt="">
+            <span class="sr-only">LinkedIn page</span>
+          </a>
+          <a
+            href="https://instagram.com/rifah"
+            class="text-gray-500 hover:text-gray-900"
+          >
+           <img class="w-10" src="./assets/icons/instagram-icon.png" alt="">
+            <span class="sr-only">Instagram page</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Add Font Awesome for social media icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1200, // Animation duration in milliseconds
+        offset: 50, // Change offset to trigger animations sooner or later (px)
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

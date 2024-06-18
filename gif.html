@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Successful</title>
+  </head>
+  <body>
+    <svg 
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 180 180"
+      width="180"
+      height="180"
+      preserveAspectRatio="xMidYMid meet"
+      style="
+        width: 100%;
+        height: 100%;
+        transform: translate3d(0px, 0px, 0px);
+        content-visibility: visible;
+      "
+    >
+      <defs>
+        <linearGradient
+          id="gradient"
+          spreadMethod="pad"
+          gradientUnits="userSpaceOnUse"
+          x1="0"
+          y1="0"
+          x2="180"
+          y2="180"
+        >
+          <stop offset="0%" stop-color="rgb(17,153,142)"></stop>
+          <stop offset="31%" stop-color="rgb(36,196,134)"></stop>
+          <stop offset="100%" stop-color="rgb(56,239,125)"></stop>
+        </linearGradient>
+      </defs>
+      <circle cx="90" cy="90" r="80" fill="url(#gradient)" />
+      <path
+        id="check"
+        d="M60 90 L80 110 L120 70"
+        fill="none"
+        stroke="white"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <animate
+          attributeName="stroke-dasharray"
+          from="0, 200"
+          to="200, 0"
+          dur="1s"
+          fill="freeze"
+        />
+      </path>
+    </svg>
+  </body>
+</html>
