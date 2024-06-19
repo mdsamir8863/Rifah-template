@@ -223,350 +223,8 @@
       </div>
     </section> -->
 
-    <script type="module">
-      import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
-
-      const keenSlider = new KeenSlider(
-        "#keen-slider",
-        {
-          loop: true,
-          slides: {
-            origin: "center",
-            perView: 1.25,
-            spacing: 16,
-          },
-          breakpoints: {
-            "(min-width: 1024px)": {
-              slides: {
-                origin: "auto",
-                perView: 2.5,
-                spacing: 32,
-              },
-            },
-          },
-        },
-        []
-      );
-
-      const keenSliderPrevious = document.getElementById(
-        "keen-slider-previous"
-      );
-      const keenSliderNext = document.getElementById("keen-slider-next");
-
-      keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
-      keenSliderNext.addEventListener("click", () => keenSlider.next());
-    </script>
-
-    <section data-aos="flip-up"
-    data-aos-offset="50"
-    data-aos-anchor-placement="top-center" class="" style="overflow-x: hidden;">
-      <div
-        class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
-      >
-        <div
-          class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
-        >
-          <h2
-            style="border-bottom: 2px dashed white; padding-bottom: 1rem;"
-            class="max-w-xl text-4xl text-center font-bold tracking-tight text-white sm:text-5xl"
-          >
-            Testimonials
-          </h2>
-
-          <div class="mt-8 flex gap-4 lg:mt-0">
-            <button
-              aria-label="Previous slide"
-              id="keen-slider-previous"
-              class="rounded-full border border-white p-3 text-white transition hover:bg-white hover:text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="h-5 w-5 rtl:rotate-180"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            </button>
-
-            <button
-              aria-label="Next slide"
-              id="keen-slider-next"
-              class="rounded-full border border-white p-3 text-white transition hover:bg-white hover:text-black"
-            >
-              <svg
-                class="h-5 w-5 rtl:rotate-180"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 5l7 7-7 7"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
-          <div id="keen-slider" class="keen-slider">
-            <div class="keen-slider__slide">
-              <blockquote
-                class="flex h-[95%] rounded-lg flex-col justify-center bg-white px-6 shadow-sm sm:p-5 lg:p-12"
-              >
-                <div>
-                  <div
-                    class="avatarWrapper flex items-center w-full justify-between"
-                  >
-                    <div class="">
-                      <p class="font-bold text-cyan-500 sm:text-xl">
-                        Sarfaraz Ansari
-                      </p>
-                      <p class="text-sm text-gray-400">Designation</p>
-                    </div>
-                    <div
-                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
-                    >
-                      <img
-                        class="w-full h-full overflow-hidded"
-                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
-                      Mr.Shariff
-                    </p> -->
-
-                    <p class="mt-4 leading-relaxed text-gray-700">
-                      "Ham Rifah Chamber of Commerce and Industry Ke Shukrguzar
-                      Hein. Rifah Ne Hamein Hamari Organisation Register Karne
-                      aur Run Karne Ke Silsile Me Alag Alag Experts Se Connect
-                      Kiya. Experts Ke&nbsp;Sahi Mashware Ke Base Par Hamne
-                      Right Direction Me Kaam Kiya. Ab Ham Apni Organisation Ki
-                      Activities Behtarin Tariqe Se Anjaam De Rahe Hein.
-                      Jazakallahu Khaira"
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
-                  &mdash; Michael Scott
-                </footer> -->
-              </blockquote>
-            </div>
-
-            <div class="keen-slider__slide">
-              <blockquote
-                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
-              >
-                <div>
-                  <div
-                    class="avatarWrapper flex items-center w-full justify-between"
-                  >
-                    <div class="">
-                      <p class="font-bold text-cyan-500 sm:text-xl">
-                        Sarfaraz Ansari
-                      </p>
-                      <p class="text-sm text-gray-400">Designation</p>
-                    </div>
-                    <div
-                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
-                    >
-                      <img
-                        class="w-full h-full overflow-hidded"
-                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
-                      Mrs. Zoya Habeeb
-                    </p> -->
-
-                    <p class="mt-4 leading-relaxed text-gray-700">
-                      I always contacted Rifah Chamber of Commerce and Industry
-                      for all my business related issues which I came across. I
-                      got two contacts of businessmen who are interested in my
-                      new startup. Last but not the least, I got an amazing
-                      experience of visiting the world 3rd largest exhibition
-                      called Canton Fair in Ganzhou China through a business
-                      delegation tour organised by Rifah.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
-                  &mdash; Michael Scott
-                </footer> -->
-              </blockquote>
-            </div>
-
-            <div class="keen-slider__slide">
-              <blockquote
-                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
-              >
-                <div>
-                  <div
-                    class="avatarWrapper flex items-center w-full justify-between"
-                  >
-                    <div class="">
-                      <p class="font-bold text-cyan-500 sm:text-xl">
-                        Sarfaraz Ansari
-                      </p>
-                      <p class="text-sm text-gray-400">Designation</p>
-                    </div>
-                    <div
-                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
-                    >
-                      <img
-                        class="w-full h-full overflow-hidded"
-                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
-                      Mrs & Mr.Rohan Kapoor
-                    </p> -->
-
-                    <p class="mt-4 leading-relaxed text-gray-700">
-                      It was unexpected, my meeting with Rifah team. Very
-                      Impressive introductory speech made me realized their
-                      dedication to community. Rifah team was a friendly, which
-                      made me to ignite and clear doubts in mind about an
-                      entrepreneurship thought which I had in mind. Immediately
-                      after registering ,I got resources a well experienced
-                      entrepreneur to guide and motivate. May Allah bless and
-                      accept Rifah efforts.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
-                  &mdash; Michael Scott
-                </footer> -->
-              </blockquote>
-            </div>
-            <div class="keen-slider__slide">
-              <blockquote
-                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
-              >
-                <div>
-                  <div
-                    class="avatarWrapper flex items-center w-full justify-between"
-                  >
-                    <div class="">
-                      <p class="font-bold text-cyan-500 sm:text-xl">
-                        Sarfaraz Ansari
-                      </p>
-                      <p class="text-sm text-gray-400">Designation</p>
-                    </div>
-                    <div
-                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
-                    >
-                      <img
-                        class="w-full h-full overflow-hidded"
-                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
-                      Mr. Muhammed Umar
-                    </p> -->
-
-                    <p class="mt-4 leading-relaxed text-gray-700">
-                      I contacted Rifah Chamber of Commerce and Industry
-                      regarding my startup in honey business. I got tremendous
-                      guidance about this product. I came to the different types
-                      of honey available in the market, its use and demand. Got
-                      list of government approved labs by Rifah which are into
-                      testing quality and ingredients. Whether we should make
-                      our brand or not and how to promote our brand too.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
-                  &mdash; Michael Scott
-                </footer> -->
-              </blockquote>
-            </div>
-            <div class="keen-slider__slide">
-              <blockquote
-                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
-              >
-                <div>
-                  <div
-                    class="avatarWrapper flex items-center w-full justify-between"
-                  >
-                    <div class="">
-                      <p class="font-bold text-cyan-500 sm:text-xl">
-                        Sarfaraz Ansari
-                      </p>
-                      <p class="text-sm text-gray-400">Designation</p>
-                    </div>
-                    <div
-                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
-                    >
-                      <img
-                        class="w-full h-full overflow-hidded"
-                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
-                      Ms. Zeba Hashim
-                    </p> -->
-
-                    <p class="mt-4 leading-relaxed text-gray-700">
-                      On behalf of “Britona Foods Pvt Ltd”, I would like to
-                      thanks Rifah Chamber of Commerce and Industry for their
-                      continuous support and contribution in resolving our
-                      issues. In our manufacturing process we encountered some
-                      issues which results in lowering our efficiency and we
-                      were struggling to sort it out. RCCI and especially Mirza
-                      Afzal Sahab played major role in not only identifying the
-                      core issue but also in providing solutions.We sincerely
-                      thank and acknowledge the services and support of RCCI.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
-                  &mdash; Michael Scott
-                </footer> -->
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- show cards start -->
-    <section class="my-16 flex justify-center items-center md:mt-5">
+    <section class="my-16 flex justify-center items-center md:mt-24">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Card 1 -->
         <div class="card-container group w-80 h-[15rem] perspective mx-auto">
@@ -764,7 +422,352 @@
     </section>
 
     <!-- show cards end -->
+    <!-- testimonials -->
+    <script type="module">
+      import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
 
+      const keenSlider = new KeenSlider(
+        "#keen-slider",
+        {
+          loop: true,
+          slides: {
+            origin: "center",
+            perView: 1.25,
+            spacing: 16,
+          },
+          breakpoints: {
+            "(min-width: 1024px)": {
+              slides: {
+                origin: "auto",
+                perView: 2.5,
+                spacing: 32,
+              },
+            },
+          },
+        },
+        []
+      );
+
+      const keenSliderPrevious = document.getElementById(
+        "keen-slider-previous"
+      );
+      const keenSliderNext = document.getElementById("keen-slider-next");
+
+      keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+      keenSliderNext.addEventListener("click", () => keenSlider.next());
+    </script>
+
+    <section
+      data-aos="flip-up"
+      data-aos-offset="50"
+      data-aos-anchor-placement="top-center"
+      class=""
+      style="overflow-x: hidden;"
+    >
+      <div
+        class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+      >
+        <div
+          class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
+        >
+          <h2
+            style="border-bottom: 2px dashed white; padding-bottom: 1rem;"
+            class="max-w-xl text-4xl text-center font-bold tracking-tight text-white sm:text-5xl"
+          >
+            Testimonials
+          </h2>
+
+          <div class="mt-8 flex gap-4 lg:mt-0">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="rounded-full border border-white p-3 text-white transition hover:bg-white hover:text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-5 w-5 rtl:rotate-180"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="rounded-full border border-white p-3 text-white transition hover:bg-white hover:text-black"
+            >
+              <svg
+                class="h-5 w-5 rtl:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+          <div id="keen-slider" class="keen-slider">
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white px-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                  Mr.Shariff
+                </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      "Ham Rifah Chamber of Commerce and Industry Ke Shukrguzar
+                      Hein. Rifah Ne Hamein Hamari Organisation Register Karne
+                      aur Run Karne Ke Silsile Me Alag Alag Experts Se Connect
+                      Kiya. Experts Ke&nbsp;Sahi Mashware Ke Base Par Hamne
+                      Right Direction Me Kaam Kiya. Ab Ham Apni Organisation Ki
+                      Activities Behtarin Tariqe Se Anjaam De Rahe Hein.
+                      Jazakallahu Khaira"
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+              &mdash; Michael Scott
+            </footer> -->
+              </blockquote>
+            </div>
+
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                  Mrs. Zoya Habeeb
+                </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      I always contacted Rifah Chamber of Commerce and Industry
+                      for all my business related issues which I came across. I
+                      got two contacts of businessmen who are interested in my
+                      new startup. Last but not the least, I got an amazing
+                      experience of visiting the world 3rd largest exhibition
+                      called Canton Fair in Ganzhou China through a business
+                      delegation tour organised by Rifah.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+              &mdash; Michael Scott
+            </footer> -->
+              </blockquote>
+            </div>
+
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                  Mrs & Mr.Rohan Kapoor
+                </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      It was unexpected, my meeting with Rifah team. Very
+                      Impressive introductory speech made me realized their
+                      dedication to community. Rifah team was a friendly, which
+                      made me to ignite and clear doubts in mind about an
+                      entrepreneurship thought which I had in mind. Immediately
+                      after registering ,I got resources a well experienced
+                      entrepreneur to guide and motivate. May Allah bless and
+                      accept Rifah efforts.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+              &mdash; Michael Scott
+            </footer> -->
+              </blockquote>
+            </div>
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                  Mr. Muhammed Umar
+                </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      I contacted Rifah Chamber of Commerce and Industry
+                      regarding my startup in honey business. I got tremendous
+                      guidance about this product. I came to the different types
+                      of honey available in the market, its use and demand. Got
+                      list of government approved labs by Rifah which are into
+                      testing quality and ingredients. Whether we should make
+                      our brand or not and how to promote our brand too.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+              &mdash; Michael Scott
+            </footer> -->
+              </blockquote>
+            </div>
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-[95%] rounded-lg flex-col justify-center bg-white p-6 shadow-sm sm:p-5 lg:p-12"
+              >
+                <div>
+                  <div
+                    class="avatarWrapper flex items-center w-full justify-between"
+                  >
+                    <div class="">
+                      <p class="font-bold text-cyan-500 sm:text-xl">
+                        Sarfaraz Ansari
+                      </p>
+                      <p class="text-sm text-gray-400">Designation</p>
+                    </div>
+                    <div
+                      class="imageWrapper h-16 w-16 rounded-full overflow-hidden"
+                    >
+                      <img
+                        class="w-full h-full overflow-hidded"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <!-- <p class="text-2xl font-bold text-white sm:text-3xl">
+                  Ms. Zeba Hashim
+                </p> -->
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      On behalf of “Britona Foods Pvt Ltd”, I would like to
+                      thanks Rifah Chamber of Commerce and Industry for their
+                      continuous support and contribution in resolving our
+                      issues. In our manufacturing process we encountered some
+                      issues which results in lowering our efficiency and we
+                      were struggling to sort it out. RCCI and especially Mirza
+                      Afzal Sahab played major role in not only identifying the
+                      core issue but also in providing solutions.We sincerely
+                      thank and acknowledge the services and support of RCCI.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <footer class="mt-4 text-sm font-medium text-gray-700">
+              &mdash; Michael Scott
+            </footer> -->
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- CHAMBER NEWS start -->
     <section class="my-16 flex flex-col justify-center items-center">
       <h2
@@ -1449,7 +1452,7 @@
             href="https://facebook.com/rifah"
             class="text-gray-500 hover:text-gray-900"
           >
-            <img class="w-10" src="./assets/icons/WhatsApp_icon.png" alt="">
+            <img class="w-10" src="./assets/icons/WhatsApp_icon.png" alt="" />
             <span class="sr-only">Facebook page</span>
           </a>
           <!-- <a
@@ -1463,20 +1466,45 @@
             href="https://linkedin.com/company/rifah"
             class="text-gray-500 hover:text-gray-900"
           >
-           <img class="w-10" src="./assets/icons/linkedin-icon.png" alt="">
+            <img class="w-10" src="./assets/icons/linkedin-icon.png" alt="" />
             <span class="sr-only">LinkedIn page</span>
           </a>
           <a
             href="https://instagram.com/rifah"
             class="text-gray-500 hover:text-gray-900"
           >
-           <img class="w-10" src="./assets/icons/instagram-icon.png" alt="">
+            <img class="w-10" src="./assets/icons/instagram-icon.png" alt="" />
             <span class="sr-only">Instagram page</span>
           </a>
         </div>
       </div>
     </footer>
-
+    <!-- Go to Top Button -->
+    <button
+      data-aos="fade-down"
+      id="goToTopBtn"
+      class="fixed bottom-8 right-8 bg-blue-500 text-white p-3 rounded-full shadow-lg hidden animate__animated animate__bounceIn"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 18.75 7.5-7.5 7.5 7.5"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 12.75 7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </button>
     <!-- Add Font Awesome for social media icons -->
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
